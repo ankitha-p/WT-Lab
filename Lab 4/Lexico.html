@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<body>
+<center>
+<table border="0" cellpadding="3" cellspacing="0">
+    <tr>
+        <td>Enter text:</td>
+        <td><input type="text" id="txt" /></td>
+    </tr>
+  
+    <tr>
+        <td></td>
+        <td><input type="button" id="btnSubmit" value="Submit" onclick="Work()" /></td>
+    </tr>
+</table>
+</center>
+</body>
+<script type="text/javascript">
+    function Work() {
+        var input = document.getElementById("txt").value;
+	var len=input.length;
+	var alpha=Array(26).fill(0);
+	for(i=0;i<len;i++) alpha[input.charCodeAt(i)-97]++;
+	for(j=0;j<26;j++) if(alpha[j]!=0) document.writeln(String.fromCharCode(j+97));
+	//var result=input.split('').sort().join('');	
+}
+	
+    
+</script>
+</html>

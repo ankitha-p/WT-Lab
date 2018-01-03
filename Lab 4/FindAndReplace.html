@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<body>
+<center>
+<table border="0" cellpadding="3" cellspacing="0">
+    <tr>
+        <td>Enter text:</td>
+        <td><input type="text" id="txt" /></td>
+    </tr>
+<tr>
+        <td>Enter find:</td>
+        <td><input type="text" id="find" /></td>
+    </tr>
+<tr>
+        <td>Enter replace:</td>
+        <td><input type="text" id="replace" /></td>
+    </tr>
+  
+    <tr>
+        <td></td>
+        <td><input type="button" id="btnSubmit" value="Submit" onclick="Work()" /></td>
+    </tr>
+</table>
+</center>
+</body>
+<script type="text/javascript">
+    function Work() {
+        var input = document.getElementById("txt").value;
+	var find=document.getElementById("find").value;
+	var rep=document.getElementById("replace").value;
+	var output=input.replace(new RegExp(find,'g'),rep);	
+	document.writeln(output);	
+}    
+</script>
+</html>

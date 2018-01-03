@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<body>
+<center>
+<table border="0" cellpadding="3" cellspacing="0">
+    <tr>
+        <td>Enter number:</td>
+        <td><input type="text" id="txt" /></td>
+    </tr>
+  
+    <tr>
+        <td></td>
+        <td><input type="button" id="btnSubmit" value="Submit" onclick="Work()" /></td>
+    </tr>
+</table>
+</center>
+</body>
+<script type="text/javascript">
+    function Work() {
+        var input = document.getElementById("txt").value;
+	var len=input.length;
+	if(input.charAt(0)!=9 || len!=10) alert("Invalid number");
+	else{
+		var ph=/^\d{10}$/;
+		if(input.match(ph)) alert("Correct number")
+		else alert("Incorrect number");
+	}	
+}
+	
+    
+</script>
+</html>
