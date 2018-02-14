@@ -1,0 +1,10 @@
+Steps to deploy the servlet on Tomcat Server:
+
+1. Create a folder on Desktop say Servlets
+2. Create two folders in it called src and WEB-INF.
+3. Inside the WEB-INF, add the web.xml file and also create the classes folder.
+4. Inside the src, create a java file say, HelloWorld.java and compile it.
+5. The HelloWorld.class file thus created inside the src folder is cut and pasted inside the classes folder of WEB-INF.
+6. Go to servelets in terminal, then " jar -cvf 122.war * ". This creates a war file inside Servlets folder.
+7. Go to 172.20.1.144:8080 and deploy the .war file.
+8. You can view the output in 172.20.1.144:8080/122/hello
