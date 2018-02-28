@@ -7,6 +7,16 @@
         This is a demo web application to print Hello World.
     </description>
 
+    <context-param>
+        <param-name> n1 </param-name>
+        <param-value> 100 </param-value>
+    </context-param>
+ 
+    <context-param>
+        <param-name> n2  </param-name>
+        <param-value> 200 </param-value>
+    </context-param>
+
     <servlet>
         <servlet-name>HelloWorld</servlet-name>
         <servlet-class>HelloWorld</servlet-class>
@@ -26,5 +36,38 @@
         <servlet-name>HttpRequestsDemo</servlet-name>
         <url-pattern>/https</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OnServletContext</servlet-name>
+        <servlet-class>OnServletContext</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OnServletContext</servlet-name>
+        <url-pattern>/context</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FirstServlet1</servlet-name>
+        <servlet-class>FirstServlet1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FirstServlet1</servlet-name>
+        <url-pattern>/firstS1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SecondServlet1</servlet-name>
+        <servlet-class>SecondServlet1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SecondServlet1</servlet-name>
+        <url-pattern>/secondS1</url-pattern>
+    </servlet-mapping>
+
+   <welcome-file-list>  
+        <welcome-file>index.html</welcome-file>  
+   </welcome-file-list> 
+ 
 
 </web-app>     
