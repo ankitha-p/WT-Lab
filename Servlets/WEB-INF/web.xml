@@ -2,107 +2,126 @@
 
 <web-app>
 
-    <display-name>122 HelloWorld Application</display-name>
-    <description>
-        This is a demo web application to print Hello World.
-    </description>
+	<display-name>122 HelloWorld Application</display-name>
+	<description>
+	This is a demo web application to print Hello World.
+	</description>
 
-    <context-param>
-        <param-name> n1 </param-name>
-        <param-value> 100 </param-value>
-    </context-param>
- 
-    <context-param>
-        <param-name> n2  </param-name>
-        <param-value> 200 </param-value>
-    </context-param>
+	<context-param>
+		<param-name> n1 </param-name>
+		<param-value> 100 </param-value>
+	</context-param>
 
-   <welcome-file-list>  
-        <welcome-file>index.html</welcome-file>  
-   </welcome-file-list> 
- 
-    <servlet>
-        <servlet-name>HelloWorld</servlet-name>
-        <servlet-class>HelloWorld</servlet-class>
-    </servlet>
+	<context-param>
+		<param-name> n2  </param-name>
+		<param-value> 200 </param-value>
+	</context-param>
 
-    <servlet-mapping>
-        <servlet-name>HelloWorld</servlet-name>
-        <url-pattern>/hello</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>HttpRequestsDemo</servlet-name>
-        <servlet-class>HttpRequestsDemo</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>HttpRequestsDemo</servlet-name>
-        <url-pattern>/https</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>OnServletContext</servlet-name>
-        <servlet-class>OnServletContext</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>OnServletContext</servlet-name>
-        <url-pattern>/context</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>FirstServlet1</servlet-name>
-        <servlet-class>FirstServlet1</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>FirstServlet1</servlet-name>
-        <url-pattern>/firstS1</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>SecondServlet1</servlet-name>
-        <servlet-class>SecondServlet1</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>SecondServlet1</servlet-name>
-        <url-pattern>/secondS1</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>FirstServlet2</servlet-name>
-        <servlet-class>FirstServlet2</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>FirstServlet2</servlet-name>
-        <url-pattern>/firstS2</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>SecondServlet2</servlet-name>
-        <servlet-class>SecondServlet2</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>SecondServlet2</servlet-name>
-        <url-pattern>/secondS2</url-pattern>
-    </servlet-mapping>
+	<welcome-file-list>  
+		<welcome-file>index.html</welcome-file>  
+	</welcome-file-list> 
 
 	<servlet>
-	 <servlet-name>Validation</servlet-name>
-	 <servlet-class>Validation</servlet-class>
-	 </servlet>
-	 <servlet-mapping>
-	 <servlet-name>Validation</servlet-name>
-	 <url-pattern>/loginPage</url-pattern>
-	 </servlet-mapping>
-	 <servlet>
-	 <servlet-name>WelcomeUser</servlet-name>
-	 <servlet-class>WelcomeUser</servlet-class>
-	 </servlet>
-	 <servlet-mapping>
-	 <servlet-name>WelcomeUser</servlet-name>
-	 <url-pattern>/welcome</url-pattern>
-	 </servlet-mapping>
+		<servlet-name>HelloWorld</servlet-name>
+		<servlet-class>HelloWorld</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HelloWorld</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HttpRequestsDemo</servlet-name>
+		<servlet-class>HttpRequestsDemo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HttpRequestsDemo</servlet-name>
+		<url-pattern>/https</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>OnServletContext</servlet-name>
+		<servlet-class>OnServletContext</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>OnServletContext</servlet-name>
+		<url-pattern>/context</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FirstServlet1</servlet-name>
+		<servlet-class>FirstServlet1</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FirstServlet1</servlet-name>
+		<url-pattern>/firstS1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SecondServlet1</servlet-name>
+		<servlet-class>SecondServlet1</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SecondServlet1</servlet-name>
+		<url-pattern>/secondS1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FirstServlet2</servlet-name>
+		<servlet-class>FirstServlet2</servlet-class>
+	</servlet>
+
+		<servlet-mapping>
+		<servlet-name>FirstServlet2</servlet-name>
+		<url-pattern>/firstS2</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SecondServlet2</servlet-name>
+		<servlet-class>SecondServlet2</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SecondServlet2</servlet-name>
+		<url-pattern>/secondS2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Validation</servlet-name>
+		<servlet-class>Validation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Validation</servlet-name>
+		<url-pattern>/loginPage</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>WelcomeUser</servlet-name>
+		<servlet-class>WelcomeUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WelcomeUser</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+	<servlet>  
+		<servlet-name>s1</servlet-name>  
+		<servlet-class>HelloServlet</servlet-class>  
+	</servlet>  
+	  
+	<servlet-mapping>  
+		<servlet-name>s1</servlet-name>  
+		<url-pattern>/servlet1</url-pattern>  
+	</servlet-mapping>  
+	  
+	<filter>  
+		<filter-name>f1</filter-name>  
+		<filter-class>MyFilter</filter-class>  
+	</filter>  
+	   
+	<filter-mapping>  
+		<filter-name>f1</filter-name>  
+		<url-pattern>/servlet1</url-pattern>  
+	</filter-mapping>  
 
 </web-app> 
