@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app>
+
+  <display-name>Employee Details</display-name>
+  <description>
+     Servlet with Mysql
+  </description>
+
+
+    <servlet>
+        <servlet-name>fs</servlet-name>
+        <servlet-class>formservlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>fs</servlet-name>
+        <url-pattern>/formservlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>rs</servlet-name>
+        <servlet-class>reportservlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>rs</servlet-name>
+        <url-pattern>/reportservlet</url-pattern>
+    </servlet-mapping>
+<welcome-file-list>  
+   <welcome-file>form.html</welcome-file>  
+   
+  </welcome-file-list>  
+ 
+</web-app>
